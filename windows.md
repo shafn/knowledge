@@ -19,7 +19,7 @@ youtube-dl -i --extract-audio --audio-format mp3 --audio-quality 0 YT_URL
 
 ## Как соеденить видео и аудио
 ```bash
-ffmpeg -i video.mp4 -i audio.wav -c:v copy -c:a aac -strict experimental output.mp4
+ffmpeg -i video.mp4 -i audio.mp4 -c copy output.mp4
 
 ```
 
